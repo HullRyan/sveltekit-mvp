@@ -1,3 +1,3 @@
-<footer class="flex items-center w-full h-12 border-t p-4">
-    <a href='https://github.com/hullryan'>GitHub</a>
+<footer class="flex items-center w-full border-t">
+    <a href='https://github.com/hullryan' class=" p-4">GitHub</a>
 </footer>

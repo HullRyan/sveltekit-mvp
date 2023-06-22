@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav a {
+	font-size: 16px !important;
+}
+
+footer a {
+	font-size: 16px !important;
+}
+
+.jp-Notebook {
+	padding: 0 !important;
+}
