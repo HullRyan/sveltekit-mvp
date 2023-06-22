@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-nav a {
-	font-size: 16px !important;
+
+nav {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
 }
 
 footer a {
