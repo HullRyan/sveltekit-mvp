@@ -5,24 +5,24 @@
 	import { page } from "$app/stores";
 	$: path = $page.url.pathname;
 	$: basePath = (path).includes("/sveltekit-mvp")
-		? "/sveltekit-mvp"
-		: "";
+		? "/sveltekit-mvp/"
+		: "/";
     $: baseNum = (path).includes("/sveltekit-mvp") ? 2 : 1;
 </script>
 
 <nav class="flex gap-10 p-4 border-b-2">
 	<a href={basePath} class:font-bold={path == basePath}>Home</a>
-	<a href={basePath + "/about"} class:font-bold={path == basePath + "/about"}
+	<a href={basePath + "about"} class:font-bold={path == basePath + "about"}
 		>About</a
 	>
 	<span
 		><a
-			href={basePath + "/classes"}
-			class:font-bold={path == basePath + "/classes"}>Classes</a
+			href={basePath + "classes"}
+			class:font-bold={path == basePath + "classes"}>Classes</a
 		>
 		{#if decodeURI(path.split("/")[baseNum+ 1 ]) != "undefined"}
 			/ <a
-				href="{basePath + '/' + path.split('/')[baseNum]}/{path.split('/')[baseNum + 1]}"
+				href="{basePath + '' + path.split('/')[baseNum]}/{path.split('/')[baseNum + 1]}"
 				class:font-bold={path.split("/")[baseNum + 2] == undefined}
 			>
 				{decodeURI(path.split("/")[baseNum + 1])}</a
