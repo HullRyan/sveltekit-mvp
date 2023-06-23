@@ -1,6 +1,7 @@
 <script>
 	//This could be further improved by recursively checking the
-	//path to hand any level of subfolders
+	//path to hand any level of subfolders. Would be better to 
+    //use env. variables to set the base path and baseNum
 	import { page } from "$app/stores";
 	$: path = $page.url.pathname;
 	$: basePath = (path).includes("/sveltekit-mvp")
