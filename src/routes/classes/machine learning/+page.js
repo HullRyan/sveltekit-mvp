@@ -1,6 +1,6 @@
 import { page } from '$app/stores';
 
-export async function load({ params }) {
+export async function load() {
 	let links = [];
 
 	for (const [key, value] of Object.entries(import.meta.glob(`./*/*.md`))) {
